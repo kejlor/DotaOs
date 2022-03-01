@@ -11,6 +11,7 @@
 		E93629C427CEE77B000E86E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629C327CEE77B000E86E9 /* ContentView.swift */; };
 		E93629C627CEE77B000E86E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93629C527CEE77B000E86E9 /* Assets.xcassets */; };
 		E93629C927CEE77B000E86E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93629C827CEE77B000E86E9 /* Preview Assets.xcassets */; };
+		E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D427CEE884000E86E9 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E93629C327CEE77B000E86E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E93629C527CEE77B000E86E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E93629C827CEE77B000E86E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E93629D427CEE884000E86E9 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		E93629D327CEE803000E86E9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E93629D427CEE884000E86E9 /* NetworkingManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */,
 				E93629C427CEE77B000E86E9 /* ContentView.swift in Sources */,
 				E93629C227CEE77B000E86E9 /* DotaOsApp.swift in Sources */,
 			);

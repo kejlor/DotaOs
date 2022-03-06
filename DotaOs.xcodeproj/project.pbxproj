@@ -12,6 +12,14 @@
 		E93629C627CEE77B000E86E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93629C527CEE77B000E86E9 /* Assets.xcassets */; };
 		E93629C927CEE77B000E86E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93629C827CEE77B000E86E9 /* Preview Assets.xcassets */; };
 		E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D427CEE884000E86E9 /* NetworkingManager.swift */; };
+		E93629D727CEE9C7000E86E9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D627CEE9C7000E86E9 /* Player.swift */; };
+		E93629D927CEEC69000E86E9 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D827CEEC69000E86E9 /* MatchHistory.swift */; };
+		E94441B027D518D000916FFD /* PreviewProvider+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441AF27D518D000916FFD /* PreviewProvider+Ext.swift */; };
+		E94441B227D51A8B00916FFD /* MatchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */; };
+		E94441B427D51C8A00916FFD /* MatchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B327D51C8A00916FFD /* MatchHistoryView.swift */; };
+		E94441B627D522EA00916FFD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B527D522EA00916FFD /* HomeView.swift */; };
+		E94441BA27D5248900916FFD /* PlayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B927D5248900916FFD /* PlayerDataService.swift */; };
+		E9B6F06527CEF10A0026FFAA /* MatchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		E93629C527CEE77B000E86E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E93629C827CEE77B000E86E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E93629D427CEE884000E86E9 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		E93629D627CEE9C7000E86E9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E93629D827CEEC69000E86E9 /* MatchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
+		E94441AF27D518D000916FFD /* PreviewProvider+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Ext.swift"; sourceTree = "<group>"; };
+		E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryViewModel.swift; sourceTree = "<group>"; };
+		E94441B327D51C8A00916FFD /* MatchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryView.swift; sourceTree = "<group>"; };
+		E94441B527D522EA00916FFD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E94441B927D5248900916FFD /* PlayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataService.swift; sourceTree = "<group>"; };
+		E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +69,13 @@
 		E93629C027CEE77B000E86E9 /* DotaOs */ = {
 			isa = PBXGroup;
 			children = (
+				E93629C127CEE77B000E86E9 /* DotaOsApp.swift */,
+				E94441AE27D518A500916FFD /* Extension */,
 				E93629D327CEE803000E86E9 /* Utility */,
 				E93629D227CEE7F9000E86E9 /* Service */,
-				E93629D127CEE7F4000E86E9 /* Model */,
+				E93629D127CEE7F4000E86E9 /* Models */,
 				E93629D027CEE7AD000E86E9 /* CoreData */,
 				E93629CF27CEE7A5000E86E9 /* Core */,
-				E93629C127CEE77B000E86E9 /* DotaOsApp.swift */,
 				E93629C327CEE77B000E86E9 /* ContentView.swift */,
 				E93629C527CEE77B000E86E9 /* Assets.xcassets */,
 				E93629C727CEE77B000E86E9 /* Preview Content */,
@@ -77,6 +94,8 @@
 		E93629CF27CEE7A5000E86E9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E94441AD27D5189300916FFD /* ViewModels */,
+				E94441AC27D5188E00916FFD /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -88,16 +107,20 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		E93629D127CEE7F4000E86E9 /* Model */ = {
+		E93629D127CEE7F4000E86E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E93629D627CEE9C7000E86E9 /* Player.swift */,
+				E93629D827CEEC69000E86E9 /* MatchHistory.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E93629D227CEE7F9000E86E9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */,
+				E94441B927D5248900916FFD /* PlayerDataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -108,6 +131,31 @@
 				E93629D427CEE884000E86E9 /* NetworkingManager.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		E94441AC27D5188E00916FFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E94441B327D51C8A00916FFD /* MatchHistoryView.swift */,
+				E94441B527D522EA00916FFD /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E94441AD27D5189300916FFD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E94441AE27D518A500916FFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E94441AF27D518D000916FFD /* PreviewProvider+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94441BA27D5248900916FFD /* PlayerDataService.swift in Sources */,
+				E93629D727CEE9C7000E86E9 /* Player.swift in Sources */,
+				E94441B227D51A8B00916FFD /* MatchHistoryViewModel.swift in Sources */,
 				E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */,
+				E94441B627D522EA00916FFD /* HomeView.swift in Sources */,
+				E94441B427D51C8A00916FFD /* MatchHistoryView.swift in Sources */,
+				E94441B027D518D000916FFD /* PreviewProvider+Ext.swift in Sources */,
 				E93629C427CEE77B000E86E9 /* ContentView.swift in Sources */,
+				E93629D927CEEC69000E86E9 /* MatchHistory.swift in Sources */,
+				E9B6F06527CEF10A0026FFAA /* MatchHistoryService.swift in Sources */,
 				E93629C227CEE77B000E86E9 /* DotaOsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

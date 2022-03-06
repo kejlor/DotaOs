@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct DotaOsApp: App {
+    @StateObject private var vm = MatchHistoryViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                MatchHistoryView()
+            }
+            .environmentObject(vm)
         }
     }
 }

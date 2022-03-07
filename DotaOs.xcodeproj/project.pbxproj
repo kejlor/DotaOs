@@ -15,10 +15,14 @@
 		E93629D727CEE9C7000E86E9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D627CEE9C7000E86E9 /* Player.swift */; };
 		E93629D927CEEC69000E86E9 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629D827CEEC69000E86E9 /* MatchHistory.swift */; };
 		E94441B027D518D000916FFD /* PreviewProvider+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441AF27D518D000916FFD /* PreviewProvider+Ext.swift */; };
-		E94441B227D51A8B00916FFD /* MatchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */; };
-		E94441B427D51C8A00916FFD /* MatchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B327D51C8A00916FFD /* MatchHistoryView.swift */; };
 		E94441B627D522EA00916FFD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B527D522EA00916FFD /* HomeView.swift */; };
 		E94441BA27D5248900916FFD /* PlayerDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94441B927D5248900916FFD /* PlayerDataService.swift */; };
+		E957074527D62D4A0089DD5F /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957074427D62D4A0089DD5F /* PlayerViewModel.swift */; };
+		E957074727D6347D0089DD5F /* PlayerWinRatioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957074627D6347D0089DD5F /* PlayerWinRatioService.swift */; };
+		E957074927D635C60089DD5F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957074827D635C60089DD5F /* PlayerView.swift */; };
+		E957074B27D651C10089DD5F /* WinRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957074A27D651C10089DD5F /* WinRatio.swift */; };
+		E966708327D619E80051C79D /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E966708227D619E80051C79D /* CoreDataStore.swift */; };
+		E966708627D619FC0051C79D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E966708427D619FC0051C79D /* Main.xcdatamodeld */; };
 		E9B6F06527CEF10A0026FFAA /* MatchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,10 +36,14 @@
 		E93629D627CEE9C7000E86E9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E93629D827CEEC69000E86E9 /* MatchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
 		E94441AF27D518D000916FFD /* PreviewProvider+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Ext.swift"; sourceTree = "<group>"; };
-		E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryViewModel.swift; sourceTree = "<group>"; };
-		E94441B327D51C8A00916FFD /* MatchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryView.swift; sourceTree = "<group>"; };
 		E94441B527D522EA00916FFD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E94441B927D5248900916FFD /* PlayerDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDataService.swift; sourceTree = "<group>"; };
+		E957074427D62D4A0089DD5F /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		E957074627D6347D0089DD5F /* PlayerWinRatioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinRatioService.swift; sourceTree = "<group>"; };
+		E957074827D635C60089DD5F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		E957074A27D651C10089DD5F /* WinRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinRatio.swift; sourceTree = "<group>"; };
+		E966708227D619E80051C79D /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		E966708527D619FC0051C79D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,7 @@
 				E93629C327CEE77B000E86E9 /* ContentView.swift */,
 				E93629C527CEE77B000E86E9 /* Assets.xcassets */,
 				E93629C727CEE77B000E86E9 /* Preview Content */,
+				E966708427D619FC0051C79D /* Main.xcdatamodeld */,
 			);
 			path = DotaOs;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 		E93629D027CEE7AD000E86E9 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E966708227D619E80051C79D /* CoreDataStore.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 			children = (
 				E93629D627CEE9C7000E86E9 /* Player.swift */,
 				E93629D827CEEC69000E86E9 /* MatchHistory.swift */,
+				E957074A27D651C10089DD5F /* WinRatio.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 			children = (
 				E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */,
 				E94441B927D5248900916FFD /* PlayerDataService.swift */,
+				E957074627D6347D0089DD5F /* PlayerWinRatioService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -136,8 +148,8 @@
 		E94441AC27D5188E00916FFD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E94441B327D51C8A00916FFD /* MatchHistoryView.swift */,
 				E94441B527D522EA00916FFD /* HomeView.swift */,
+				E957074827D635C60089DD5F /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,7 +157,7 @@
 		E94441AD27D5189300916FFD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E94441B127D51A8B00916FFD /* MatchHistoryViewModel.swift */,
+				E957074427D62D4A0089DD5F /* PlayerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -229,16 +241,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E94441BA27D5248900916FFD /* PlayerDataService.swift in Sources */,
+				E957074727D6347D0089DD5F /* PlayerWinRatioService.swift in Sources */,
 				E93629D727CEE9C7000E86E9 /* Player.swift in Sources */,
-				E94441B227D51A8B00916FFD /* MatchHistoryViewModel.swift in Sources */,
+				E957074927D635C60089DD5F /* PlayerView.swift in Sources */,
 				E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */,
+				E966708627D619FC0051C79D /* Main.xcdatamodeld in Sources */,
 				E94441B627D522EA00916FFD /* HomeView.swift in Sources */,
-				E94441B427D51C8A00916FFD /* MatchHistoryView.swift in Sources */,
+				E957074527D62D4A0089DD5F /* PlayerViewModel.swift in Sources */,
+				E966708327D619E80051C79D /* CoreDataStore.swift in Sources */,
 				E94441B027D518D000916FFD /* PreviewProvider+Ext.swift in Sources */,
 				E93629C427CEE77B000E86E9 /* ContentView.swift in Sources */,
 				E93629D927CEEC69000E86E9 /* MatchHistory.swift in Sources */,
 				E9B6F06527CEF10A0026FFAA /* MatchHistoryService.swift in Sources */,
 				E93629C227CEE77B000E86E9 /* DotaOsApp.swift in Sources */,
+				E957074B27D651C10089DD5F /* WinRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E966708427D619FC0051C79D /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E966708527D619FC0051C79D /* Main.xcdatamodel */,
+			);
+			currentVersion = E966708527D619FC0051C79D /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E93629B627CEE77B000E86E9 /* Project object */;
 }

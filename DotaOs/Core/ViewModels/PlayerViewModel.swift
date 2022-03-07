@@ -10,10 +10,6 @@ import Combine
 import CoreData
 
 final class PlayerViewModel: ObservableObject {
-//    let storage: CoreDataStore
-//    let viewContext: NSManagedObjectContext
-    
-//    @Published var followedPlayers: [FollowedPlayer]
     @Published var allMatches: [Match] = []
     @Published var player: Player? = nil
     @Published var winRatio: WinRatio? = nil
@@ -27,10 +23,6 @@ final class PlayerViewModel: ObservableObject {
     private var anyCancellables = Set<AnyCancellable>()
     
     init(playerId: String) {
-//        self.storage = storage
-//        viewContext = storage.container.viewContext
-//        storage.fetchFollowedPlayers()
-//        self.followedPlayers = storage.followedPlayers
         self.playerId = playerId
         self.playerDataService = PlayerDataService(playerId: playerId)
         self.playerWinRatioService = PlayerWinRatioService(playerId: playerId)
@@ -57,11 +49,4 @@ final class PlayerViewModel: ObservableObject {
             }
             .store(in: &anyCancellables)
     }
-    
-//    func addFollowedPlayer() {
-//        storage.addFollowedPlayer(steamCode: newSteamCode, dateAdded: newDateAdded)
-//        storage.saveData()
-//        storage.fetchFollowedPlayers()
-//        followedPlayers = storage.followedPlayers
-//    }
 }

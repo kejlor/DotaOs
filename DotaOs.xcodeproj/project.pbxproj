@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E900197127D7A5CC00E7C5CA /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900197027D7A5CC00E7C5CA /* NetworkingService.swift */; };
 		E93629C227CEE77B000E86E9 /* DotaOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629C127CEE77B000E86E9 /* DotaOsApp.swift */; };
 		E93629C427CEE77B000E86E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93629C327CEE77B000E86E9 /* ContentView.swift */; };
 		E93629C627CEE77B000E86E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93629C527CEE77B000E86E9 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E900197027D7A5CC00E7C5CA /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		E93629BE27CEE77B000E86E9 /* DotaOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93629C127CEE77B000E86E9 /* DotaOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaOsApp.swift; sourceTree = "<group>"; };
 		E93629C327CEE77B000E86E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				E9B6F06427CEF10A0026FFAA /* MatchHistoryService.swift */,
 				E94441B927D5248900916FFD /* PlayerDataService.swift */,
 				E957074627D6347D0089DD5F /* PlayerWinRatioService.swift */,
+				E900197027D7A5CC00E7C5CA /* NetworkingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E93629D727CEE9C7000E86E9 /* Player.swift in Sources */,
 				E957074927D635C60089DD5F /* PlayerView.swift in Sources */,
 				E93629D527CEE884000E86E9 /* NetworkingManager.swift in Sources */,
+				E900197127D7A5CC00E7C5CA /* NetworkingService.swift in Sources */,
 				E94441B627D522EA00916FFD /* HomeView.swift in Sources */,
 				E957074527D62D4A0089DD5F /* PlayerViewModel.swift in Sources */,
 				E94441B027D518D000916FFD /* PreviewProvider+Ext.swift in Sources */,
